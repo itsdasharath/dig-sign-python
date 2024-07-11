@@ -1,4 +1,4 @@
-# Digital Signature Verification Project
+# Digital Signature Verification system
 
 This project aims to implement a digital signature verification system. It allows users to verify the authenticity and integrity of digitally signed documents.
 
@@ -28,24 +28,24 @@ This project aims to implement a digital signature verification system. It allow
 1. Generate a key pair (public and private key).
     
     ```shell
-     python rsa-keys.py
+     python digi-sign.py -g
     ```
 
 2. Sign a document using the private key:
 
     ```shell
-    python digi-sig.py -s path/to/private_key.pem path/to/data_file.txt path/to/signature.sig 
+    python digi-sign.py -s private_key.pem data_file.txt signature.sig 
     ```
 
 3. Verify the signature using the public key:
 
     ```shell
-    
-    python digi-sig.py -v path/to/public_key.pem path/to/data_file.txt path/to/signature.sig 
+     python digi-sign.py -v public_key.pem data_file.txt signature.sig 
+
     ```
 
- -s for generating a signature.
- -v for verifying a signature.
+ -s for generating a signature. <br>
+  -v for verifying a signature.
     
 optional
  --algorithm for specifying the hash algorithm (SHA256, SHA384, SHA512).
