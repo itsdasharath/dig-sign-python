@@ -123,10 +123,4 @@ if __name__ == "__main__":
     main()
 
 
-#  -s for generating a signature.
-# -v for verifying a signature.
-# --algorithm for specifying the hash algorithm (SHA256, SHA384, SHA512).
 
-# To generate a signature using the private key, run the following command: python digi-sig.py -s path/to/private_key.pem path/to/data_file.txt path/to/signature.sig --algorithm SHA384
-
-# To verify a signature using the public key, run the following command: python digi-sig.py -v path/to/public_key.pem path/to/data_file.txt path/to/signature.sig --algorithm SHA384
