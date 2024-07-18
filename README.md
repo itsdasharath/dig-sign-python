@@ -20,7 +20,7 @@ This project aims to implement a digital signature verification system. It allow
 
 2. Install the required dependencies:
     ```shell
-        pip install pycryptodome  
+        pip install argparse cryptography 
     ```
 
 ## Usage
